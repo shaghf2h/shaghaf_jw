@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>هدية 💝</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background:#ffe6f0;
+    font-family:Tahoma;
+}
+
+button{
+    padding:20px 40px;
+    font-size:24px;
+    border:none;
+    border-radius:20px;
+    background:#ff4d88;
+    color:white;
+    cursor:pointer;
+}
+
+video{
+    display:none;
+    width:90%;
+    max-width:500px;
+    margin-top:20px;
+    border-radius:15px;
+}
+</style>
+</head>
+
+<body>
+
+<button onclick="showVideo()">
+ساره علي دز الج هديه 💝
+</button>
+
+<video id="myVideo" controls>
+    <source src="13241.mp4" type="video/mp4">
+</video>
+
+<script>
+function showVideo(){
+    document.querySelector("button").style.display="none";
+    let video = document.getElementById("myVideo");
+    video.style.display="block";
+    video.play();
+}
+</script>
